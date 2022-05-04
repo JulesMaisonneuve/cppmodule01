@@ -3,10 +3,11 @@
 int main(void)
 {
     Zombie *zombie = NULL;
-    zombie = zombie->zombieHorde(5, "test");
+    zombie = zombieHorde(5, "Zombie");
     for (int i = 0; i < 5; i++)
     {
         zombie[i].announce();
     }
+    delete [] zombie;
     return (0);
 }

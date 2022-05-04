@@ -4,15 +4,14 @@
 # include <iostream>
 # include "Weapon.hpp"
 
-using namespace std;
-
 class HumanA
 {
 	private:
-		string name;
+		std::string name;
 		Weapon &weapon;
 	public:
-		HumanA(string name, Weapon &weapon);
+		HumanA(void);
+		HumanA(std::string name, Weapon &weapon);
 		~HumanA(void);
 		void attack(void);
 };

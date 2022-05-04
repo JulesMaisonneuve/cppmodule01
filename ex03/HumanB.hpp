@@ -4,16 +4,13 @@
 # include <iostream>
 # include "Weapon.hpp"
 
-using namespace std;
-
 class HumanB
 {
 	private:
-		string name;
+		std::string name;
 		Weapon *weapon;
 	public:
-		HumanB(void);
-		HumanB(string name);
+		HumanB(std::string name);
 		~HumanB(void);
 		void attack(void);
 		void setWeapon(Weapon &weapon);

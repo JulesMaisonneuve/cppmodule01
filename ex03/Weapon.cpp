@@ -5,18 +5,18 @@ Weapon::Weapon(void)
     return ;
 }
 
-Weapon::Weapon(string type)
+Weapon::Weapon(std::string type)
 {
     this->type = type;
     return ;
 }
 
-const string &Weapon::getType(void)
+const std::string &Weapon::getType(void)
 {
     return (this->type);
 }
 
-void Weapon::setType(string type)
+void Weapon::setType(std::string type)
 {
     this->type = type;
     return ;

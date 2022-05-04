@@ -5,19 +5,16 @@
 # include <cstring>
 # include <string>
 
-using namespace std;
-
 class Weapon
 {
 	private:
-		string type;
+		std::string type;
 	public:
 		Weapon(void);
-		Weapon(string type);
+		Weapon(std::string type);
 		~Weapon(void);
-		const string &getType(void);
-		void setType(string type);
-
+		const std::string &getType(void);
+		void setType(std::string type);
 };
 
 #endif
