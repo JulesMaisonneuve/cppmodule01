@@ -3,8 +3,6 @@
 
 # include <iostream>
 
-using namespace std;
-
 class Harl
 {
 	private:
@@ -12,10 +10,11 @@ class Harl
 		void info(void);
 		void warning(void);
 		void error(void);
+		// typedef void (Harl::*functionPointer[4])(void);
 	public:
 		Harl(void);
 		~Harl(void);
-		void complain(string level);
+		void complain(std::string level);
 };
 
 #endif
